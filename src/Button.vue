@@ -199,7 +199,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$margin: 3px;
+$margin: 0px;
 
 .vue-js-switch {
   display: inline-block;
@@ -251,6 +251,7 @@ $margin: 3px;
       transform: translate3d($margin, $margin, 0);
       border-radius: 100%;
       background-color: #fff;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
     }
   }
 
