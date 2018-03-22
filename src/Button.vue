@@ -32,7 +32,7 @@ const constants = {
   labelUnchecked: 'off',
   width: 50,
   height: 22,
-  margin: 3
+  margin: 0
 }
 
 const contains = (object, title) => {
@@ -124,7 +124,7 @@ export default {
         height: px(this.buttonRadius),
         transition: `transform ${this.speed}ms`,
         transform: this.toggled
-          ? `translate3d(${this.distance}, 3px, 0px)`
+          ? `translate3d(${this.distance}, 0px, 0px)`
           : null
       }
     },

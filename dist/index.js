@@ -146,7 +146,7 @@ var constants = {
   labelUnchecked: 'off',
   width: 50,
   height: 22,
-  margin: 3
+  margin: 0
 };
 
 var contains = function contains(object, title) {
@@ -232,7 +232,7 @@ var px = function px(v) {
         width: px(this.buttonRadius),
         height: px(this.buttonRadius),
         transition: 'transform ' + this.speed + 'ms',
-        transform: this.toggled ? 'translate3d(' + this.distance + ', 3px, 0px)' : null
+        transform: this.toggled ? 'translate3d(' + this.distance + ', 0px, 0px)' : null
       };
     },
     labelStyle: function labelStyle() {
@@ -458,7 +458,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "change": function($event) {
         $event.stopPropagation();
-        _vm.toggle($event)
+        return _vm.toggle($event)
       }
     }
   }), _vm._v(" "), _c('div', {
