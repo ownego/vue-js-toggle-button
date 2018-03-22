@@ -204,7 +204,6 @@ $margin: 0px;
 .vue-js-switch {
   display: inline-block;
   position: relative;
-  overflow: hidden;
   vertical-align: middle;
   user-select: none;
   font-size: 10px;
@@ -251,7 +250,7 @@ $margin: 0px;
       transform: translate3d($margin, $margin, 0);
       border-radius: 100%;
       background-color: #fff;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     }
   }
 
